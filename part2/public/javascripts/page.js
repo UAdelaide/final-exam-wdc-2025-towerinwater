@@ -34,6 +34,8 @@ createApp({
                 alert(info.message);
             });
         });
+
+        await fetch('')
     },
 
     methods: {
