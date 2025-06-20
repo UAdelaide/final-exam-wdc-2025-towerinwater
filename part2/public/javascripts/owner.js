@@ -1,6 +1,7 @@
 const { createApp, ref, onMounted } = Vue;
 createApp({
     methods: {
+        /* fetch to logout */
         logout(){
             fetch('/users/logout', {
                 method: 'POST',
