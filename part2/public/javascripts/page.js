@@ -3,6 +3,8 @@ createApp({
     data() {
         return {
             message: 'Welcome to the Dog Walking Service!'
+            user:{
+                username: ''
         };
     }
     methods: {
@@ -216,7 +218,7 @@ function downvote(index) {
     xmlhttp.send(JSON.stringify(user));
 
 }
-    
+*/
 
 function logout(){
 
