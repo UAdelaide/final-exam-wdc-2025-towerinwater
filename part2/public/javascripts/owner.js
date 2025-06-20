@@ -2,6 +2,7 @@ const { createApp, ref, onMounted } = Vue;
 createApp({
     data(){
         return{
+            dog_id: null,
             dogs: []
         };
     },
@@ -44,7 +45,7 @@ createApp({
                     throw new Error(info.error);
                 }
 
-                this.dog_names = info.info;
+                this.dogs = info.info;
                 alert(info.message);
             });
         });
