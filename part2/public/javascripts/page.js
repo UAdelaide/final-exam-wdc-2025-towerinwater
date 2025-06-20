@@ -28,7 +28,7 @@ createApp({
                 body: JSON.stringify(user)
             })
             .then((res) => {
-                
+                res.json().then()
             })
             .then((data) => {
                 this.CurrUser = data;
