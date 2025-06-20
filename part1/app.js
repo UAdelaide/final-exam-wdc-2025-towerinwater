@@ -92,7 +92,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
                 wr.duration_time,
                 wr.location,
                 u.username AS name
-            FROM WalkRequests
+            FROM WalkRequests AS wr
+
+            INNER JOIN Dog AS d ON wr.dog_id = d.dog_id
 
         `);
         res.json(rows);
