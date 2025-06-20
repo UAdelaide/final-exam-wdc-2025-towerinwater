@@ -20,7 +20,9 @@ app.use(session({
         httpOnly: true
     }
 }));
-app.get('/index.html')
+app.get('/index.html', login, (req, res) => {
+    res.sendFile(path.join())
+});
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
