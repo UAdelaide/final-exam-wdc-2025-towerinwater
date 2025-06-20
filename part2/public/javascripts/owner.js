@@ -44,7 +44,8 @@ createApp({
                     throw new Error(info.error);
                 }
 
-                dog_names = info.;
+                this.dog_names = info.info;
+                alert(info.message);
             });
         });
     },
