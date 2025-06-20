@@ -114,7 +114,8 @@ app.get('/api/walkers/summary', async (req, res) => {
                 COUNT(DISTINCT wa.request_id) AS completed_walks
             FROM Users u
                 INNER JOIN WalkApplications wa
-                    ON u.user_id = 
+                    ON u.user_id = wa.walker_id AND wa.status = 'accepted'
+                INNER JOIN 
         `);
         res.json(rows);
     }
