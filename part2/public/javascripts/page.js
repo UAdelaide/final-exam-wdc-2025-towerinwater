@@ -42,7 +42,7 @@ createApp({
                 return res.json();
             })
             .then((data) => {
-                this.CurrUser = data;
+                this.CurrUser = data.user;
                 console.log(this.CurrUser);
             })
             .catch((error) => {
