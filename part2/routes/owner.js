@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../models/db');
 
-router.post('/show_dogs', (req, res, next) => {
+router.post('/show_dogs', async (req, res, next) => {
     var uid = null;
 
     if(req.session.user){
@@ -13,7 +13,7 @@ router.post('/show_dogs', (req, res, next) => {
     }
 
     try{
-        const[rows] = db.query(
+        const[rows] = async db.query(
             `SELECT name FROM Dogs WHERE owner_id = ?`,
             [uid]
         );
