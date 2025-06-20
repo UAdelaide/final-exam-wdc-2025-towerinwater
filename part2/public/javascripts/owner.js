@@ -1,5 +1,9 @@
 const { createApp, ref, onMounted } = Vue;
 createApp({
+    data() {
+        return
+    },
+
     methods: {
         /* fetch to logout */
         logout(){
