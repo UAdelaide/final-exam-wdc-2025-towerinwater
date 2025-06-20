@@ -45,7 +45,7 @@ createApp({
                                 dog.imgURL = info.message;
                                 console.log(dog);
                                 /* Log message make sure everything is working */
-                                alert(info.status);
+                                // alert(info.status);
                             });
                         });
                     }
