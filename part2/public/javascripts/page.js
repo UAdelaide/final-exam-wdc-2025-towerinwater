@@ -35,7 +35,9 @@ createApp({
                     }
                     else if(!res.ok){
                         alert(info.error)
+                        throw new Error(info.error);
                     }
+                    
                 })
             })
             .then((data) => {
