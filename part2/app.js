@@ -36,6 +36,7 @@ const ownerRoutes = require('./routes/owner');
 
 app.use('/walks', walkRoutes);
 app.use('/users', userRoutes);
+app.use('/owner', requireLogin, userRoutes);
 
 // Export the app instead of listening here
 module.exports = app;
