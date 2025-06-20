@@ -5,7 +5,7 @@ const db = require('../models/db');
 router.get('/show', async (req, res) => {
     try{
         const [rows] = await db.query(`
-            SELECT 
+            SELECT * FROM Dogs
         `);
         res.status(200).json({ message: 'Successfully Loaded Info.', info: rows });
     }
