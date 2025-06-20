@@ -3,8 +3,10 @@ createApp({
     methods: {
         logout(){
             fetch('/users/logout', {
-                
+                method: 'POST',
+                credentials: 'include'
             })
+            .then
         }
     },
 
