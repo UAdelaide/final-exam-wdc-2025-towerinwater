@@ -1,6 +1,6 @@
 const { createApp, ref, onMounted } = Vue;
 createApp({
-    data(){
+    methods: {
         
     },
 
