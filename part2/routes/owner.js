@@ -9,7 +9,7 @@ router.post('/show_dogs', (req, res, next) => {
         uid = req.session.user.user_id;
     }
     else{
-        return res.status(400).json({message: 'Access Period Expired.'})
+        return res.status(400).json({ message: 'Access Period Expired.' });
     }
 
     try{
