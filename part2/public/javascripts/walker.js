@@ -13,6 +13,7 @@ createApp({
                 credentials: 'include'
             })
             .then((res) => {
+                /* Successfully got the result and parse the json */
                 res.json().then((info) => {
                     if(res.status === 401){
                         alert(info.error);
