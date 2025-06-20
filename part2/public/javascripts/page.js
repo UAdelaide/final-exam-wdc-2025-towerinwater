@@ -36,17 +36,18 @@ createApp({
             });
         });
 
-        
-        await fetch('https://dog.ceo/api/breeds/image/random')
-        .then((res) => {
-            res.json().then((info) => {
-                if(!res.ok){
+        this.dogs.forEach((dog) => {
+            await fetch('https://dog.ceo/api/breeds/image/random')
+            .then((res) => {
+                res.json().then((info) => {
+                    if(!res.ok){
+                        alert(info.status);
+                        throw new Error('Can not fetch image');
+                    }
+                    this.img = info.message;
+                    /* Log message make sure everything is working */
                     alert(info.status);
-                    throw new Error('Can not fetch image');
-                }
-                this.img = info.message;
-                /* Log message make sure everything is working */
-                alert(info.status);
+                });
             });
         });
     },
