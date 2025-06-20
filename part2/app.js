@@ -40,6 +40,7 @@ app.use('/walks', walkRoutes);
 app.use('/users', userRoutes);
 app.use('/owner', ownerRoutes);
 app.use('/walker', walkerRoutes);
+app.use('/dog', dogRoutes);
 
 // Export the app instead of listening here
 module.exports = app;
