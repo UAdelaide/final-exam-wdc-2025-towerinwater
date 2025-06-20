@@ -20,6 +20,7 @@ app.use(session({
         httpOnly: true
     }
 }));
+app.get('/index.html')
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
