@@ -32,7 +32,7 @@ createApp({
                 }
                 this.dogs = info.info;
                 /* Log message make sure everything is working */
-                alert(info.message);
+                // alert(info.message);
             });
         });
 
