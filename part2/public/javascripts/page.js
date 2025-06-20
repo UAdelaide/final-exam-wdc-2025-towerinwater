@@ -31,10 +31,10 @@ createApp({
                     throw new Error(info.error);
                 }
                 this.dogs = info.info;
+                console.log(this.dogs);
                 /* Log message make sure everything is working */
                 alert(info.message);
             });
-            console.log(this.dogs);
         });
 
         for(const dog of this.dogs){
