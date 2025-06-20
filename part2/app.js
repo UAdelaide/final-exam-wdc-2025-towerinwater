@@ -10,7 +10,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(session({
     name: 'user.id',
-
+    secret: 'TriHai',
+    saveUninitialized: false,
+    
 }));
 
 // Routes
