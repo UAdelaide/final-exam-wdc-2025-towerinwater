@@ -34,6 +34,7 @@ const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 const ownerRoutes = require('./routes/owner');
 const walkerRoutes = require('./routes/walker');
+const dogRoutes = require('./routes/dog');
 
 app.use('/walks', walkRoutes);
 app.use('/users', userRoutes);
