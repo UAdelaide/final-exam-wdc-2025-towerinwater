@@ -66,7 +66,12 @@ let db;
 app.get('/api/dogs', async (req, res) => {
     try{
         const [rows] = db.query(`
-            SELECT d.name AS dog_name, d.size AS dog_size, u.username AS name FROM Dogs AS d
+            SELECT
+                d.name AS dog_name,
+                d.size AS dog_size,
+                u.username AS name
+                FROM Dogs AS d
+
                 INNER JOIN Users AS u ON
                     d.owner_id = u.user_id
         `);
@@ -83,7 +88,8 @@ app.get('/api/walkrequests/open', async (req, res) => {
             SELECT
                 wr.request_id,
                 d.name AS dog_name,
-                
+                wr.request_time,
+
         `);
         res.json(rows);
     }
