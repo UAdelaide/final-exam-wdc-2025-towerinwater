@@ -15,7 +15,8 @@ createApp({
                 role: '',
                 email: ''
             },
-            dogs: []
+            dogs: [],
+            img: ''
         };
     },
 
