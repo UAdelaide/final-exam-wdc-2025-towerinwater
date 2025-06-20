@@ -3,7 +3,7 @@ const router = express.Router();
 const db = require('../models/db');
 
 router.post('/show_dogs', (req, res, next) => {
-    const uid = null;
+    var uid = null;
 
     if(req.session.user){
         uid = req.session.user.user_id;
