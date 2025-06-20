@@ -28,7 +28,7 @@ createApp({
                 body: JSON.stringify(user)
             })
             .then((res) => {
-                if(res === 401)
+                if(res === 401) alert('Invalid credential');
                 if(!res.ok) throw new Error("Can not log in");
                 return res.json();
             })
