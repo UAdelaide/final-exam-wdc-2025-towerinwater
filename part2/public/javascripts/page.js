@@ -11,7 +11,9 @@ createApp({
     }
     methods: {
         async login(){
-            
+            try{
+                const 
+            }
         }
     }
 }).mount('#app');
