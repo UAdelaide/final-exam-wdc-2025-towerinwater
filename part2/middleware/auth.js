@@ -13,8 +13,8 @@ function requireRole(role){
             return next();
         }
 
-        if(re){
-
+        if(req.session.user.role === 'walker'){
+            
         }
     };
 }
