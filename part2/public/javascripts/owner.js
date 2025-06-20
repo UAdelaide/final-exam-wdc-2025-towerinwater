@@ -10,6 +10,7 @@ createApp({
             .then((res) => {
                 res.json().then((response) => {
                     if(res.status === 200){
+                        /* Bring user back to the log in page and prompt them a message. */
                         window.location.href = '/index.html';
                         alert(response.message);
                     }
