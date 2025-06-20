@@ -40,9 +40,10 @@ createApp({
 
                     this.CurrUser.uid = info.user.user_id;
                     this.CurrUser.name = info.user.username;
-                    this.CurrUser.role = data.user.role;
-                    this.CurrUser.email = data.user.email;
+                    this.CurrUser.role = info.user.role;
+                    this.CurrUser.email = info.user.email;
 
+                    
                     alert(info.message);
                 });
             })
