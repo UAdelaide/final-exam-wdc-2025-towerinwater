@@ -33,12 +33,12 @@ app.use(express.static(path.join(__dirname, '/public')));
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 const ownerRoutes = require('./routes/owner');
-const ownerRoutes = require('./routes/walker');
+const walkerRoutes = require('./routes/walker');
 
 app.use('/walks', walkRoutes);
 app.use('/users', userRoutes);
 app.use('/owner', ownerRoutes);
-app.use('/walker', ownerRoutes);
+app.use('/walker', walkerRoutes);
 
 // Export the app instead of listening here
 module.exports = app;
