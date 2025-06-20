@@ -13,11 +13,11 @@ router.get('/dogs', async (req, res) => {
             INNER JOIN Users AS u ON
                 d.owner_id = u.user_id
         `);
-        res.status(200).json({ message: 'Successfully Loaded Info', info: rows });
+        res.status(200).json({ message: 'Successfully Loaded Info.', info: rows });
     }
     catch(err){
         console.log(err);
-        res.status(500).json({ error: '' });
+        res.status(500).json({ error: 'Internal Errors.' });
     }
 });
 
