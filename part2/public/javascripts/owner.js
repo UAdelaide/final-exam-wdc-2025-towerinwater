@@ -28,7 +28,9 @@ createApp({
             credentials: "include"
         })
         .then((res) => {
-            
+            res.json().then((info) => {
+                if()
+            });
         });
     },
 
