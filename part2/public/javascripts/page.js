@@ -6,6 +6,10 @@ createApp({
             UserLogin: {
                 username: '',
                 password: ''
+            },
+            CurrUser: {
+                username: '',
+                
             }
         };
     }
