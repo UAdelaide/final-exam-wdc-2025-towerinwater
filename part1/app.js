@@ -67,7 +67,7 @@ let db;
 app.get('/api/dogs', async (req, res) => {
     try{
         const [rows] = db.query(`
-
+            SELECT d.name
         `)
     }
     catch(err){
