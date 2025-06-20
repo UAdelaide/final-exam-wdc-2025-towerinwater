@@ -7,6 +7,10 @@ createApp({
         const error = ref('');
         const user = 17;
 
+        async function getCurrentUser() {
+
+        }
+
         async function loadWalkRequests() {
             try {
                 const res = await fetch('/walker');
