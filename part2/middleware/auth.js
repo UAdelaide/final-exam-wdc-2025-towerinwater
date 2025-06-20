@@ -12,8 +12,9 @@ function requireRole(role){
         if(req.session && req.session.user.role === role){
             return next();
         }
-        else{
-            res 
+
+        if(re){
+
         }
     };
 }
