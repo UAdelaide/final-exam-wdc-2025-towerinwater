@@ -67,7 +67,7 @@ let db;
 app.get('/api/dogs', async (req, res) => {
     try{
         const [rows] = db.query(`
-            SELECT d.name AS dog_name, d.size AS dog_size
+            SELECT d.name AS dog_name, d.size AS dog_size, u.username AS name FROM Dogs AS d
         `)
     }
     catch(err){
