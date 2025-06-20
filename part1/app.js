@@ -93,7 +93,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
                 wr.location,
                 u.username AS name
             FROM WalkRequests AS wr
-                INNER JOIN Dogs AS d ON wr.dog_id = d.dog_id
+                INNER JOIN Dogs AS d ON wr.dog_id = d.dog_id, wr.user_id = d.owner_id
                 INNER JOIN Users AS u ON wr.user_id = u.user_id
             WHERE wr.status = 'open'
         `);
