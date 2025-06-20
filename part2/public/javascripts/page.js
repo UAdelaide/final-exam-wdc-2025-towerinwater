@@ -37,15 +37,17 @@ createApp({
                         alert(info.error)
                         throw new Error(info.error);
                     }
+
+                    this.CurrUser.uid = data.user.user_id;
+                    this.CurrUser.name = data.user.username;
+                    this.CurrUser.role = data.user.role;
+                    this.CurrUser.email = data.user.email;
+                    
                     alert(info.message);
                     return info;
                 });
             })
             .then((data) => {
-                this.CurrUser.uid = data.user.user_id;
-                this.CurrUser.name = data.user.username;
-                this.CurrUser.role = data.user.role;
-                this.CurrUser.email = data.user.email;
             })
             .catch((error) => {
                 console.log(error);
