@@ -3,6 +3,7 @@ createApp({
     data() {
         return {
             message: 'Welcome to the Dog Walking Service!',
+            /*Storing the login info of the user*/
             UserLogin: {
                 username: '',
                 password: ''
