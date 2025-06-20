@@ -30,9 +30,10 @@ router.post('/register', async (req, res) => {
 
 router.get('/me', (req, res) => {
 	if (!req.session.user) {
-		/*
+		/* Put some more log error message */
 		return res.status(401).json({ error: 'Not logged in' });
 	}
+	/* Successful log message when  */
 	res.status(200).json({ message: 'Successfully Loaded Info', info: req.session.user.user_id });
 });
 
