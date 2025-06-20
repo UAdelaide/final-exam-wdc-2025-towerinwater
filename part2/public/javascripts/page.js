@@ -28,7 +28,7 @@ createApp({
                 body: JSON.stringify(user)
             })
             .then((res) => {
-                res.json().then((info) => {
+                return res.json().then((info) => {
                     if(res.status === 401){
                         alert(info.error);
                         throw new Error(info.error);
@@ -39,7 +39,6 @@ createApp({
                     }
                     alert(info.message);
                 });
-                return info;
             })
             .then((data) => {
                 this.CurrUser = data.user;
