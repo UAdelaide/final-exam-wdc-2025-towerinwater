@@ -41,7 +41,7 @@ createApp({
                 });
             })
             .then((data) => {
-                this.CurrUser = data.user;
+                this.CurrUser = data;
                 console.log(this.CurrUser);
             })
             .catch((error) => {
