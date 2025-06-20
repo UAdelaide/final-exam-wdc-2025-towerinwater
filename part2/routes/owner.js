@@ -21,6 +21,6 @@ router.post('/show_dogs', async (req, res, next) => {
         res.status(200).json({ message: 'Successfully Loaded Info', info: rows });
     }
     catch(error){
-        res.status(500).json({ error: 'Interal Server Error '});
+        res.status(500).json({ error: 'Interal Server Error ' });
     }
 });
