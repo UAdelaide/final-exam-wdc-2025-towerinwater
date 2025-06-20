@@ -13,7 +13,9 @@ createApp({
             })
             .then((res) => {
                 res.json().then((info) => {
-                    if()
+                    if(res.status === 401){
+
+                    }
                 });
             });
         }
