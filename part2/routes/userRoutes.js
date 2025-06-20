@@ -32,7 +32,7 @@ router.get('/me', (req, res) => {
 	if (!req.session.user) {
 		return res.status(401).json({ error: 'Not logged in' });
 	}
-	res.json({req.session.user);
+	res.json({messsage: 'Successfully Loaded Info', req.session.user);
 });
 
 /* Updated POST of login */
