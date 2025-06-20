@@ -43,8 +43,8 @@ createApp({
                     this.CurrUser.role = info.user.role;
                     this.CurrUser.email = info.user.email;
 
-                    const role = info.user.role;
-                    if()
+                    const role = this.CurrUser.role;
+                    if(role === 'owner') window.location.href = 
                     alert(info.message);
                 });
             })
