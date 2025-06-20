@@ -34,7 +34,7 @@
 						<!-- <input v-model="form.dog_id" type="number" class="form-control" required> -->
 						<select v-model="dog_id" required class="form-select">
 							<option v-if="dogs.lenght === 0">Empty</option>
-							<option v-if="dogs.lenght === 0">Empty</option>
+							<option disabled >Empty</option>
 							<option v-for="dog in dogs" :key="dog.dog_id" :value="dog.dog_id">
 								{{ dog.name }}
 							</option>
