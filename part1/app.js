@@ -37,7 +37,7 @@ let db;
         });
 
         await db.query(`
-
+            
         `)
 
     } catch (err) {
