@@ -37,7 +37,8 @@ createApp({
                         alert(info.error)
                         throw new Error(info.error);
                     }
-                    
+
+                    return info;
                 })
             })
             .then((data) => {
