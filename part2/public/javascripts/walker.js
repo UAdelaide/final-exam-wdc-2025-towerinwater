@@ -58,6 +58,7 @@ createApp({
         }
 
         onMounted(() => {
+            getCurrentUser();
             loadWalkRequests();
         });
 
