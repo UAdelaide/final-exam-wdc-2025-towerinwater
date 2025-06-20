@@ -42,8 +42,8 @@ createApp({
         };
         loadWalks();
         } catch (err) {
-        error.value = err.message;
-        message.value = '';
+            error.value = err.message;
+            message.value = '';
         }
     }
 
