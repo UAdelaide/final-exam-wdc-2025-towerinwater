@@ -6,6 +6,7 @@
     ('phuong', 'phuong@example.com',    'hashed126', 'owner');
 */
 
-INSERT INTO Dogs (username, email, password_hash, role) VALUES
+INSERT INTO Dogs (name, size) VALUES
+    ()
 
 SELECT * FROM Users;
