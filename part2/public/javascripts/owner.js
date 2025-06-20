@@ -12,9 +12,11 @@ createApp({
                         alert(response.message);
                         window.location.href = '/index.html';
                     }
-                    else alert(res.json().error);
-                })
-            })
+                    else{
+                        alert(res.json().error);
+                    }
+                });
+            });
         }
     },
 
