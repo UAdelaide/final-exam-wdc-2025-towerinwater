@@ -16,7 +16,8 @@ createApp({
                 email: ''
             },
             dogs: [],
-            img: ''
+            img: '',
+            
         };
     },
 
@@ -38,20 +39,19 @@ createApp({
 
         this.dogs.forEach((dog) => {
             try{
-
-            }
-            await fetch('https://dog.ceo/api/breeds/image/random')
-            .then((res) => {
-                res.json().then((info) => {
-                    if(!res.ok){
+                await fetch('https://dog.ceo/api/breeds/image/random')
+                .then((res) => {
+                    res.json().then((info) => {
+                        if(!res.ok){
+                            alert(info.status);
+                            throw new Error('Can not fetch image');
+                        }
+                        dog.imgURL = info.message;
+                        /* Log message make sure everything is working */
                         alert(info.status);
-                        throw new Error('Can not fetch image');
-                    }
-                    dog.imgURL = info.message;
-                    /* Log message make sure everything is working */
-                    alert(info.status);
+                    });
                 });
-            });
+            }
         });
     },
 
