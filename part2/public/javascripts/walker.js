@@ -8,7 +8,7 @@ createApp({
         const cuid = ref(null);
 
         async function getCurrentUser() {
-            /*
+            /* call the get router userRouter */
             await fetch('users/me', {
                 credentials: 'include'
             })
