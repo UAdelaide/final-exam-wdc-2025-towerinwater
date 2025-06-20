@@ -39,7 +39,7 @@ createApp({
                     }
                     alert(info.message);
                 });
-                return res;
+                return info;
             })
             .then((data) => {
                 this.CurrUser = data.user;
