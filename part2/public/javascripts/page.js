@@ -42,7 +42,8 @@ createApp({
                         throw new Error(info.error);
                     }
 
-                    //Since 
+                    //Whenever there is error, throw new Error(...) will break out of the chain
+                    //At the end, the 
                     this.CurrUser.uid = info.user.user_id;
                     this.CurrUser.name = info.user.username;
                     this.CurrUser.role = info.user.role;
