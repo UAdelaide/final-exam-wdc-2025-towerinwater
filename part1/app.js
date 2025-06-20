@@ -56,7 +56,8 @@ let db;
                 ((SELECT dog_id FROM Dogs WHERE name = 'Bella'), '2025-06-10 09:30:00', 45, 'Beachside Ave', 'accepted'),
                 ((SELECT dog_id FROM Dogs WHERE name = 'Wi'), '2025-06-12 14:00:00', 100, 'Independence St', 'open'),
                 ((SELECT dog_id FROM Dogs WHERE name = 'Bo'), '2025-06-20 15:10:00', 80, 'Independce Square', 'accepted');
-        `);
+        `);*/
+        //ALready have the data inside the db.
 
     } catch (err) {
         console.error('Error setting up database. Ensure Mysql is running: service mysql start', err);
