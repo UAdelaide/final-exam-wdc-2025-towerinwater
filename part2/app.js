@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app = express();
 
-const login = require('./middleware/auth');
+const requireLogin = require('./middleware/auth');
 
 // Middleware
 app.use(express.json());

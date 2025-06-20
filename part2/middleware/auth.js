@@ -6,3 +6,5 @@ function requireLogin(req, res, next){
         return res.redirect('/login.html');
     }
 }
+
+module.exports = requireLogin;
