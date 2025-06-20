@@ -14,13 +14,13 @@ function requireRole(role){
         }
         else{
             if(req.session.user.role === 'walker'){
-                res.setInterval(() => {
-                   
-                }, interval);
-
+                res.status(404);
                 res.redirect('/walker-dashboard.html');
             }
-            else if(req.session.user.role === 'owner') res.redirect('/owner-dashboard.html');
+            else if(req.session.user.role === 'owner'){
+                res.status(404);
+                res.redirect('/owner-dashboard.html');
+            }
         }
     };
 }
