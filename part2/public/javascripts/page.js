@@ -36,7 +36,7 @@ createApp({
             })
             .then((data) => {
                 this.CurrUser = data;
-                alert('You are logged in.');
+                alert(data.message);
             })
             .catch((error) => {
                 console.log(error);
