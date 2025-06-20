@@ -13,7 +13,7 @@ function requireRole(role){
             return next();
         }
         else{
-            return res.redirect('/index.html');
+            res 
         }
     };
 }
