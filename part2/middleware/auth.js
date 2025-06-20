@@ -9,7 +9,7 @@ function requireLogin(req, res, next){
 
 function requireRole(role){
     return (req, res, next) => {
-        if(req.session && req.session.user.role){
+        if(req.session && req.session.user.role === role){
             return next();
         }
         else{

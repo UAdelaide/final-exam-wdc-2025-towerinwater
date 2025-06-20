@@ -47,7 +47,7 @@ createApp({
                 this.CurrUser.role = data.user.role;
                 this.CurrUser.email = data.user.email;
 
-                
+
 
                 // console.log(this.CurrUser);
             })
