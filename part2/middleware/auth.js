@@ -14,11 +14,13 @@ function requireRole(role){
         }
         else{
             if(req.session.user.role === 'walker'){
-                res.status(404).send('No access to walker dashboard');
+                res.status(404);
+                alert('No access to walker dashboard')
                 res.redirect('/walker-dashboard.html');
             }
             else if(req.session.user.role === 'owner'){
                 res.status(404);
+                alert('No access to walker dashboard')
                 res.redirect('/owner-dashboard.html');
             }
         }
