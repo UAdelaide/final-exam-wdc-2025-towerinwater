@@ -31,16 +31,18 @@ createApp({
             })
             .then((res) => {    //Having got the response
                 res.json().then((info) => {
-                    //Check if the credential is aligned
+                    //Check if the credential is aligned.
                     if(res.status === 401){
                         alert(info.error);
                         throw new Error(info.error);
                     }
+                    //other errors which are not related to the credential but mostly server side.
                     else if(!res.ok){
                         alert(info.error)
                         throw new Error(info.error);
                     }
 
+                    //Since 
                     this.CurrUser.uid = info.user.user_id;
                     this.CurrUser.name = info.user.username;
                     this.CurrUser.role = info.user.role;
