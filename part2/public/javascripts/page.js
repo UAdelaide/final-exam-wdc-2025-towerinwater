@@ -19,7 +19,7 @@ createApp({
             await fetch('users/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
-                body: JSON.stringify({ user })
+                body: JSON.stringify({ UserLogin })
             })
             .then((res) => {
                 if(!res.ok) throw new Error("Can not log in");
