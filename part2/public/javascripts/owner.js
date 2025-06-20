@@ -2,7 +2,7 @@ const { createApp, ref, onMounted } = Vue;
 createApp({
     data(){
         return{
-            dog_names: []
+            dogs: []
         };
     },
 
