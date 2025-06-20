@@ -42,14 +42,15 @@ createApp({
                         throw new Error(info.error);
                     }
 
-                    //Whenever there is error, throw new Error(...) will break out of the chain.
-                    //At the end, the data has been retrieved correctly and assigned to the current user.
+                    /*Whenever there is error, throw new Error(...) will break out of the chain.*/
+                    /*At the end, the data has been retrieved correctly and assigned to the current user.*/
                     //Then take them to the corresponding page of their roles.
                     this.CurrUser.uid = info.user.user_id;
                     this.CurrUser.name = info.user.username;
                     this.CurrUser.role = info.user.role;
                     this.CurrUser.email = info.user.email;
 
+                    //Taking them to their page
                     const role = this.CurrUser.role;
                     if(role === 'owner') window.location.href = '/owner-dashboard.html';
                     else if(role === 'walker') window.location.href = '/walker-dashboard.html';
