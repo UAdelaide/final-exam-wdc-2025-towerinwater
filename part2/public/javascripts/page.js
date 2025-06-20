@@ -40,8 +40,8 @@ createApp({
                     return res.json;
                 });
             })
-            .then((data) => {
-                if()alert(data.message);
+            .then((res) => {
+                if(res)alert(data.message);
                 this.CurrUser = data.user;
             })
             .catch((error) => {
