@@ -18,8 +18,11 @@ createApp({
                         throw new Error(info.error);
                     }
                     else if(!res.ok){
-                        alert(info.error)
+                        alert(info.error);
+                        throw new Error(info.error);
                     }
+
+                    
                 });
             });
         }
