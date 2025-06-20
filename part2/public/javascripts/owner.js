@@ -1,7 +1,9 @@
 const { createApp, ref, onMounted } = Vue;
 createApp({
-    data() {
-        return
+    data(){
+        return{
+            dog
+        };
     },
 
     methods: {
