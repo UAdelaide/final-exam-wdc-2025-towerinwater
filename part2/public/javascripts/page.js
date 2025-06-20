@@ -43,7 +43,8 @@ createApp({
                     this.CurrUser.role = info.user.role;
                     this.CurrUser.email = info.user.email;
 
-                    
+                    const role = info.user.role;
+                    if()
                     alert(info.message);
                 });
             })
