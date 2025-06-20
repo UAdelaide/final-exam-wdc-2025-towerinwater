@@ -17,7 +17,9 @@ createApp({
                         alert(info.error);
                         throw new Error(info.error);
                     }
-                    else if()
+                    else if(!res.ok){
+                        alert(info.error)
+                    }
                 });
             });
         }
