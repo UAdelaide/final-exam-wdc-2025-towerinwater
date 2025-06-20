@@ -157,6 +157,8 @@ section {
 
 .logout-space{
     display: flex;
+    gap: 15em;
     justify-content: center;
-    fel
+    align-content: center;
+    flex-wrap: wrap;
 }
