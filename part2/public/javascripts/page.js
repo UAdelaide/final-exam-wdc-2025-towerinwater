@@ -5,7 +5,11 @@ createApp({
             message: 'Welcome to the Dog Walking Service!'
         };
     }
-    method
+    methods: {
+        async login(){
+
+        }
+    }
 }).mount('#app');
 
 
@@ -186,7 +190,7 @@ function downvote(index) {
 }
 
 
-function login(){
+/*function login(){
 
     let user = {
         user: document.getElementById('username').value,
@@ -212,6 +216,7 @@ function login(){
     xmlhttp.send(JSON.stringify(user));
 
 }
+    
 
 function logout(){
 
