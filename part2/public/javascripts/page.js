@@ -18,7 +18,7 @@ createApp({
                     body: JSON.stringify({user})
                 })
                 .then((res) => {
-                    if(!res.ok) throw new Error()
+                    if(!res.ok) throw new Error('')
                 })
             }
         }
