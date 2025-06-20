@@ -15,6 +15,8 @@ router.post('/show_dogs', (req, res, next) => {
             `SELECT name FROM Dogs WHERE owner_id = ?`,
             [uid]
         );
+
+        res.status(200).send(rows);
     }
     catch(error){
 
