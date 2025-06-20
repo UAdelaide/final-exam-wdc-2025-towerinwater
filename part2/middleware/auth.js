@@ -14,7 +14,7 @@ function requireRole(role){
         }
         else{
             res.status(404);
-            if(role)
+            if(req.session.user.role === 'walker') res.redirect
         }
     };
 }
