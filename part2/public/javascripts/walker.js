@@ -9,7 +9,7 @@ createApp({
 
         async function loadWalkRequests() {
             try {
-                const res = await fetch('/api/walks');
+                const res = await fetch('/walker');
                 if (!res.ok) throw new Error('Failed to load walk requests');
                 walks.value = await res.json();
             } catch (err) {
