@@ -37,7 +37,7 @@ createApp({
                         alert(info.error)
                         throw new Error(info.error);
                     }
-                    return res.json();
+                    return info;
                 });
             })
             .then((data) => {
