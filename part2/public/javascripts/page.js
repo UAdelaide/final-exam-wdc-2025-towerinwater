@@ -31,11 +31,6 @@ createApp({
                     throw new Error(info.error);
                 }
                 this.dogs = info.info;
-                /* Log message make sure everything is working */
-                // alert(info.message);
-            });
-        });
-
         for(const dog of this.dogs){
             try{
                 await fetch('https://dog.ceo/api/breeds/image/random')
@@ -56,6 +51,11 @@ createApp({
                 dog.imgURL = img_placeholder;
             }
         }
+                /* Log message make sure everything is working */
+                // alert(info.message);
+            });
+        });
+
     },
 
     methods: {
