@@ -13,7 +13,7 @@ router.post('/show_dogs', async (req, res, next) => {
     }
 
     try{
-        const[rows] = async db.query(
+        const[rows] = await db.query(
             `SELECT name FROM Dogs WHERE owner_id = ?`,
             [uid]
         );
