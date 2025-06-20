@@ -27,7 +27,10 @@ createApp({
                     return res.json();
                 })
                 .then((user) =>{
-                    this.
+                    this.CurrUser = user;
+                })
+                .catch((error) => {
+                    
                 })
             }
         }
