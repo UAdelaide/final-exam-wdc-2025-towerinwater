@@ -64,8 +64,8 @@ let db;
 })();
 
 // Route to return books as JSON
-app.get('/', async (req, res) => {
-
+app.get('/api/dogs', async (req, res) => {
+    
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
