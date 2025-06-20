@@ -84,7 +84,7 @@ app.get('/api/dogs', async (req, res) => {
 
 app.get('/api/walkrequests/open', async (req, res) => {
     try{
-        const [rows] = db.query(`
+        const [rows] = await db.query(`
             SELECT
                 wr.request_id,
                 d.name AS dog_name,
@@ -106,7 +106,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
 
 app.get('/api/walkers/summary', async (req, res) => {
     try{
-        const [rows] = db.query(`
+        const [rows] = await db.query(`
             SELECT
                 u.username AS walker_username,
                 COUNT(r.rating) AS total_ratings,
