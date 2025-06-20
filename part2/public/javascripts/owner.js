@@ -6,7 +6,9 @@ createApp({
                 method: 'POST',
                 credentials: 'include'
             })
-            .then
+            .then((res) => {
+                if(res.)
+            })
         }
     },
 
