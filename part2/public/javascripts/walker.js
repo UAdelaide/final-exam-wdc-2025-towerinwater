@@ -22,7 +22,8 @@ createApp({
                         throw new Error(info.error);
                     }
 
-                    cuid =
+                    alert(info.message);
+                    this.cuid = info.info;
                 });
             });
         }
