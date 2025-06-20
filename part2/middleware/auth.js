@@ -3,6 +3,6 @@
         return next();
     }
     else{
-        
+        return res.redirect('/login.html');
     }
 }
