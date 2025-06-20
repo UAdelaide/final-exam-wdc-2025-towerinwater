@@ -9,7 +9,12 @@ function requireLogin(req, res, next){
 
 function requireRole(role){
     return (req, res, next) => {
-        
+        if(req.session && req.session.user.role){
+            return next();
+        }
+        else{
+            return res.redirect('/index.html');
+        }
     };
 }
 
