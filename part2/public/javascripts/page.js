@@ -16,7 +16,7 @@ createApp({
         };
     },
     methods: {
-        //login function which will be prompted by the 'button' from the html when submit, using the Vue framework
+        //login function which will be prompted by the 'button' from the html when submit, using the Vue framework.
         async login(){
             //initialise the data which will be sent.
             const user = {
@@ -29,7 +29,7 @@ createApp({
                 headers: { 'Content-Type': 'application/json'},
                 body: JSON.stringify(user)
             })
-            .then((res) => {
+            .then((res) => {    //Having got the response
                 res.json().then((info) => {
                     if(res.status === 401){
                         alert(info.error);
