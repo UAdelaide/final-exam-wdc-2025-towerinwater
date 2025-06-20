@@ -13,7 +13,11 @@ function requireRole(role){
             return next();
         }
         else{
-            if(req.session.user.role === 'walker') res.redirect('/walker-dashboard.html');
+            if(req.session.user.role === 'walker'){
+                res.setInterval(() => {
+
+                res.redirect('/walker-dashboard.html');
+            }
             else if(req.session.user.role === 'owner') res.redirect('/owner-dashboard.html');
         }
     };
