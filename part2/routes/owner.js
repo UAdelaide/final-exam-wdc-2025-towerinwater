@@ -25,4 +25,4 @@ router.post('/show_dogs', async (req, res, next) => {
     }
 });
 
-module.exports = 
+module.exports = router;
