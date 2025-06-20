@@ -18,7 +18,7 @@ createApp({
         async login(){
             const user = {
                 username: UserLogin.username,
-                
+                password: UserLogin.password
             };
 
             await fetch('users/login', {
