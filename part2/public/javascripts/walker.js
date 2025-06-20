@@ -11,7 +11,11 @@ createApp({
             await fetch('users/me', {
                 credentials: 'include'
             })
-            .then((res));
+            .then((res) => {
+                res.json((info) => {
+
+                });
+            });
         }
 
         async function loadWalkRequests() {
