@@ -6,6 +6,8 @@ router.post('/show_dogs', (req, res, next) => {
     const { uid } = req.body;
 
     try{
-        
+        const[rows] = db.query(
+            ``,
+        )
     }
 });
