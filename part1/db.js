@@ -4,7 +4,7 @@ const pool = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'dogwalks.sql'
+    database: 'DogWalkService'
 });
 
 module.exports = pool.promise();
