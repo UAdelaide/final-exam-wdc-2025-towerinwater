@@ -108,7 +108,8 @@ app.get('/api/walkers/summary', async (req, res) => {
     try{
         const [rows] = db.query(`
             SELECT
-                u.username AS 
+                u.username AS walker_username,
+                
         `);
         res.json(rows);
     }
