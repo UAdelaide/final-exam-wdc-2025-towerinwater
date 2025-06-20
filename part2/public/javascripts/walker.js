@@ -22,7 +22,7 @@ createApp({
                         throw new Error(info.error);
                     }
 
-                    
+                    cuid =
                 });
             });
         }
