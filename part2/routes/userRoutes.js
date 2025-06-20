@@ -67,7 +67,7 @@ router.post('/logout', (req, res) => {
 		}
 		//Clear the cookies when no errors occur.
 		res.clearCookie('user.sid');
-		return res.status(200).json({ error: 'Successfully ' });
+		return res.status(200).json({ error: 'Successfully Logout' });
 	});
 });
 
