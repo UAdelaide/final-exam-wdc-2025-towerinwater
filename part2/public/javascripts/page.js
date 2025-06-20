@@ -37,10 +37,11 @@ createApp({
                         alert(info.error)
                         throw new Error(info.error);
                     }
+                    alert(info.message);
                     return res.json;
                 });
             })
-            .then((res) => {
+            .then((data) => {
                 this.CurrUser = data.user;
             })
             .catch((error) => {
