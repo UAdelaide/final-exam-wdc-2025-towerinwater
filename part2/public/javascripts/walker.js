@@ -46,7 +46,7 @@ createApp({
                 const res = await fetch(`/walker/${requestId}/apply`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ walker_id: cuid.value }) /*
+                    body: JSON.stringify({ walker_id: cuid.value }) /* use the new dynamic variable */
                 });
                 const result = await res.json();
 
