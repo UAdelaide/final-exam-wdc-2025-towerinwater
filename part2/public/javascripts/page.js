@@ -37,8 +37,8 @@ createApp({
                         alert(info.error)
                         throw new Error(info.error);
                     }
+                    return res.json();
                 });
-                res.json();
             })
             .then((data) => {
                 this.CurrUser = data;
