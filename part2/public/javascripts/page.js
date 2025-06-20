@@ -19,7 +19,9 @@ createApp({
     },
 
     mounted(){
-        fetch('dog/show')
+        fetch('/dog/show', {
+            
+        })
     },
 
     methods: {
