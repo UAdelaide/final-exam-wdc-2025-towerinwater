@@ -2,14 +2,16 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: 'Welcome to the Dog Walking Service!'
-            user:{
-                username: ''
+            message: 'Welcome to the Dog Walking Service!',
+            user: {
+                username: '',
+                password: ''
+            }
         };
     }
     methods: {
         async login(){
-
+            
         }
     }
 }).mount('#app');
