@@ -45,6 +45,7 @@ createApp({
                         throw new Error('Can not fetch image');
                     }
                     this.img = info.message;
+                    dog.imgURL = img;
                     /* Log message make sure everything is working */
                     alert(info.status);
                 });
