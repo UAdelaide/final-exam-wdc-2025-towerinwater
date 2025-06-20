@@ -19,7 +19,10 @@ createApp({
                 })
                 .then((res) => {
                     if(!res.ok) throw new Error("Can not log in");
-                    return 
+                    return res.json();
+                })
+                .then((user) =>{
+                    
                 })
             }
         }
