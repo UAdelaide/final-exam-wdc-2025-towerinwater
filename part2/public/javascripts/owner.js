@@ -24,9 +24,12 @@ createApp({
 
     mounted(){
         fetch('/owner/show_dogs', {
-            method: 'POST
+            method: 'POST',
+            credentials: "include"
         })
-        .then
+        .then((res) => {
+            
+        });
     },
 
     setup() {
