@@ -9,8 +9,8 @@ createApp({
             .then((res) => {
                 res.json().then((response) => {
                     if(res.status === 200){
-                        alert(response.message);
                         window.location.href = '/index.html';
+                        alert(response.message);
                     }
                     else{
                         alert(res.json().error);
