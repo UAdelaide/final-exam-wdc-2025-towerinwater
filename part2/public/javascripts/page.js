@@ -14,13 +14,14 @@ createApp({
                 name: '',
                 role: '',
                 email: ''
-            }
+            },
+            dogs: []
         };
     },
 
     mounted(){
         fetch('/dog/show', {
-            
+
         })
     },
 
