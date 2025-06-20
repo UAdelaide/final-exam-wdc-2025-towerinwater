@@ -3,7 +3,7 @@ function requireLogin(req, res, next){
         return next();
     }
     else{
-        return res.redirect('/login.html');
+        return res.redirect('/index.html');
     }
 }
 
