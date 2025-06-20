@@ -1,7 +1,7 @@
 const { createApp, ref, onMounted } = Vue;
 createApp({
     methods: {
-        function logout() => {
+        logout() => {
             
         }
     },
