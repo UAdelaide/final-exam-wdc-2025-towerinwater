@@ -31,28 +31,29 @@ createApp({
                     throw new Error(info.error);
                 }
                 this.dogs = info.info;
-        for(const dog of this.dogs){
-            try{
-                await fetch('https://dog.ceo/api/breeds/image/random')
-                .then((res) => {
-                    res.json().then((info) => {
-                        if(!res.ok){
-                            alert(info.status);
-                            throw new Error('Can not fetch image');
-                        }
-                        dog.imgURL = info.message;
-                        console.log(dog);
-                        /* Log message make sure everything is working */
-                        alert(info.status);
-                    });
-                });
-            }
-            catch{
-                dog.imgURL = img_placeholder;
-            }
-        }
+                /*Putting the image for each of the dog*/
+                for(const dog of this.dogs){
+                    try{
+                        await fetch('https://dog.ceo/api/breeds/image/random')
+                        .then((res) => {
+                            res.json().then((info) => {
+                                if(!res.ok){
+                                    alert(info.status);
+                                    throw new Error('Can not fetch image');
+                                }
+                                dog.imgURL = info.message;
+                                console.log(dog);
+                                /* Log message make sure everything is working */
+                                alert(info.status);
+                            });
+                        });
+                    }
+                    catch{
+                        dog.imgURL = img_placeholder;
+                    }
+                }
                 /* Log message make sure everything is working */
-                // alert(info.message);
+                alert(info.message);
             });
         });
 
