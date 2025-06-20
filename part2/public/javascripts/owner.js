@@ -7,12 +7,13 @@ createApp({
                 credentials: 'include'
             })
             .then((res) => {
-                res.json().then()
-                if(res.status === 200){
-                    alert()
-                    window.location.href = '/index.html';
-                }
-                else alert(res.json().error);
+                res.json().then((response) => {
+                    if(res.status === 200){
+                        alert(response.)
+                        window.location.href = '/index.html';
+                    }
+                    else alert(res.json().error);
+                })
             })
         }
     },
