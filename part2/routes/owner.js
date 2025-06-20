@@ -12,7 +12,7 @@ router.post('/show_dogs', (req, res, next) => {
 
     try{
         const[rows] = db.query(
-            `SELECT `,
+            `SELECT name FROM Dogs WHERE owner_id = ?`,
             [uid]
         )
     }
