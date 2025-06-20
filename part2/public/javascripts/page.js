@@ -274,8 +274,8 @@ function downvote(index) {
 }
 */
 
+/*
 function logout(){
-
     // Create AJAX Request
     var xmlhttp = new XMLHttpRequest();
 
@@ -284,3 +284,4 @@ function logout(){
     xmlhttp.send();
 
 }
+*/
