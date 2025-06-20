@@ -23,7 +23,10 @@ createApp({
     },
 
     mounted(){
-        fetch('/owner/show_dogs')
+        fetch('/owner/show_dogs', {
+            method: 'POST
+        })
+        .then
     },
 
     setup() {
