@@ -156,9 +156,5 @@ section {
 }
 
 .logout-space{
-    display: flex;
-    gap: 40em;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    
 }
