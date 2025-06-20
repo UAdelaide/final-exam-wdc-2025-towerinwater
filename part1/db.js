@@ -7,4 +7,4 @@ const pool = mysql.createConnection({
     database: 'dogwalks.sql'
 });
 
-export 
+module.exports = pool.promise();
