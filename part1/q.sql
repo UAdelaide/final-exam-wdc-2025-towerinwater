@@ -1,2 +1,3 @@
 SELECT
-    u.username AS 
+    u.username AS walker_username,
+    
