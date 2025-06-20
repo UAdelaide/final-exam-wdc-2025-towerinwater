@@ -41,7 +41,7 @@ createApp({
                 });
             })
             .then((data) => {
-                alert(data.message);
+                if()alert(data.message);
                 this.CurrUser = data.user;
             })
             .catch((error) => {
