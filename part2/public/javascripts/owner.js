@@ -1,5 +1,9 @@
 const { createApp, ref, onMounted } = Vue;
 createApp({
+    data(){
+        
+    },
+
     setup() {
         const form = ref({
             dog_id: '',
