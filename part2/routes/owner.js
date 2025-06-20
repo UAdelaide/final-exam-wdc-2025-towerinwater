@@ -24,3 +24,5 @@ router.post('/show_dogs', async (req, res, next) => {
         res.status(500).json({ error: 'Interal Server Error ' });
     }
 });
+
+module.exports = 
