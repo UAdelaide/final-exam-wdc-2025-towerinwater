@@ -79,7 +79,7 @@ app.get('/api/dogs', async (req, res) => {
     }
     catch(err){
         console.log(err);
-        res.status(500).json({error: 'Failed to fetch database.'});
+        res.status(500).json({ error: 'Failed to fetch database.' });
     }
 });
 
@@ -102,6 +102,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
     }
     catch(err){
         console.log(err);
+        res.status(500).json({ error: 'Failed to fetch database.' });
     }
 });
 
@@ -125,6 +126,7 @@ app.get('/api/walkers/summary', async (req, res) => {
     }
     catch(err){
         console.log(err);
+        res.status(500).json({ error: 'Failed to fetch database.' });
     }
 });
 
