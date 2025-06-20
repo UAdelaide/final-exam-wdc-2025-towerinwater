@@ -245,7 +245,7 @@ function downvote(index) {
 }
 
 
-/**/
+/*I commented the AJAX out, because I want to use everything accordingly with the Vue framework.*/
 /*function login(){
 
     let user = {
