@@ -22,7 +22,7 @@ createApp({
         }
     },
 
-    mounted() {
+    mounted(){
         
     }
 
