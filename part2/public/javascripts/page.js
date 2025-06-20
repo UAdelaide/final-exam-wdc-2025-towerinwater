@@ -38,11 +38,11 @@ createApp({
 
         await fetch('https://dog.ceo/api/breeds/image/random')
         .then((res) => {
-            if(!res.ok){
+            res.json().thenif(!res.ok){
                 alert(res.status);
                 throw new Error('Can not fetch image');
             }
-            this.img = ;
+            this.img = res.message;
             /* Log message make sure everything is working */
             alert(info.message);
         });
