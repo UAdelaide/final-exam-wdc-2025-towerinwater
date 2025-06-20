@@ -16,6 +16,10 @@ createApp({
     },
     methods: {
         async login(){
+            const user = {
+
+            }
+
             await fetch('users/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
