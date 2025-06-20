@@ -53,7 +53,7 @@ createApp({
                 });
             }
             catch{
-                dog.
+                dog.imgURL = img_placeholder;
             }
         });
     },
