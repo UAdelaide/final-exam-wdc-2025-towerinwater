@@ -8,7 +8,10 @@ createApp({
         const cuid = null;
 
         async function getCurrentUser() {
-            await fetch('users/me')
+            await fetch('users/me', {
+                
+            })
+            .then();
         }
 
         async function loadWalkRequests() {
