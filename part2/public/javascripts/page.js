@@ -30,7 +30,6 @@ createApp({
                     alert(info.error);
                     throw new Error(info.error);
                 }
-                console.log(info.info);
                 this.dogs = info.info;
                 /* Log message make sure everything is working */
                 alert(info.message);
@@ -56,6 +55,8 @@ createApp({
                 dog.imgURL = img_placeholder;
             }
         });
+
+        console.log(this.dogs);
     },
 
     methods: {
