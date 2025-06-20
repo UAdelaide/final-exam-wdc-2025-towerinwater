@@ -8,7 +8,7 @@ createApp({
             })
             .then((res) => {
                 if(res.status === 200){
-                    
+                    window.location.href = '/index.html';
                 }
             })
         }
