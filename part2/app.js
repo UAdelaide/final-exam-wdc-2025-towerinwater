@@ -19,9 +19,11 @@ app.use(session({
         httpOnly: true
     }
 }));
+
 app.get('/index.html', requireLogin, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
 app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
