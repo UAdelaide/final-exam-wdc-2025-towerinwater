@@ -40,7 +40,7 @@ createApp({
         .then((res) => {
             if(!res.ok){
                 alert(res.status);
-                throw new Error();
+                throw new Error('');
             }
             console.log(info.info);
             this.dogs = info.info;
