@@ -77,7 +77,7 @@ app.get('/api/dogs', async (req, res) => {
     }
 });
 
-app.get('/api/dogs', async (req, res) => {
+app.get('/api/walkrequests/open', async (req, res) => {
     try{
         const [rows] = db.query(`
             SELECT d.name AS dog_name, d.size AS dog_size, u.username AS name FROM Dogs AS d
