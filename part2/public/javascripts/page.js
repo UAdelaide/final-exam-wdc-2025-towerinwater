@@ -54,7 +54,6 @@ createApp({
                     catch{
                         dog.imgURL = img_placeholder;
                     }
-                }
                 /* Log message make sure everything is working */
                 alert(info.message);
             });
