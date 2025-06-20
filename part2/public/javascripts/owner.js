@@ -23,7 +23,7 @@ createApp({
     },
 
     mounted(){
-        fetch('')
+        fetch('/owner/show_dogs')
     },
 
     setup() {
