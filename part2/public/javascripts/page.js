@@ -28,7 +28,7 @@ createApp({
                 body: JSON.stringify(user)
             })
             .then((res) => {
-                return res.json().then((info) => {
+                res.json().then((info) => {
                     if(res.status === 401){
                         alert(info.error);
                         throw new Error(info.error);
@@ -38,16 +38,13 @@ createApp({
                         throw new Error(info.error);
                     }
 
-                    this.CurrUser.uid = data.user.user_id;
-                    this.CurrUser.name = data.user.username;
+                    this.CurrUser.uid = info.user.user_id;
+                    this.CurrUser.name = info.user.username;
                     this.CurrUser.role = data.user.role;
                     this.CurrUser.email = data.user.email;
-                    
+
                     alert(info.message);
-                    return info;
                 });
-            })
-            .then((data) => {
             })
             .catch((error) => {
                 console.log(error);
