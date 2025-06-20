@@ -14,7 +14,7 @@ function requireRole(role){
         }
         else{
             if(req.session.user.role === 'walker'){
-                res.status(404).;
+                res.status(404);
                 res.redirect('/walker-dashboard.html');
             }
             else if(req.session.user.role === 'owner'){
