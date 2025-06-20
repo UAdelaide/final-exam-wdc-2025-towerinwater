@@ -81,6 +81,8 @@ app.get('/api/walkrequests/open', async (req, res) => {
     try{
         const [rows] = db.query(`
             SELECT
+                wr.request_id,
+                d.name AS dog_name,
                 
         `);
         res.json(rows);
