@@ -5,7 +5,7 @@ createApp({
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
-        const user = 3;
+        const user = 17;
 
         async function loadWalkRequests() {
             try {
