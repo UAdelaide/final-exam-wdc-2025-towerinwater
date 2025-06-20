@@ -29,8 +29,9 @@ createApp({
             })
             .then((res) => {
                 if(res === 401){
-                    return res.json().then((error) => {
-                        
+                    return res.json().then((err) => {
+                        alert(err.error);
+                        throw
                     })
                 }
                 if(!res.ok) throw new Error("Can not log in");
