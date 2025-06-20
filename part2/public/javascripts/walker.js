@@ -19,7 +19,7 @@ createApp({
 
         async function applyToWalk(requestId) {
             try {
-                const res = await fetch(`/api/walks/${requestId}/apply`, {
+                const res = await fetch(`/walker/${requestId}/apply`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ walker_id: user })
