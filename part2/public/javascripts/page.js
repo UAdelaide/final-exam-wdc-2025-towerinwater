@@ -8,6 +8,7 @@ createApp({
                 password: ''
             },
             CurrUser: {
+                uid: null,
                 name: '',
                 role: '',
                 email: ''
