@@ -38,6 +38,7 @@ createApp({
                         throw new Error(info.error);
                     }
                     alert(info.message);
+                    return info;
                 });
             })
             .then((data) => {
