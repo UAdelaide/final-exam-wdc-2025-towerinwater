@@ -31,6 +31,7 @@ createApp({
             })
             .then((res) => {    //Having got the response
                 res.json().then((info) => {
+                    //Check if the credential is aligned
                     if(res.status === 401){
                         alert(info.error);
                         throw new Error(info.error);
