@@ -20,7 +20,6 @@ createApp({
                 username: this.UserLogin.username,
                 password: this.UserLogin.password
             };
-
             await fetch('users/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
@@ -30,8 +29,8 @@ createApp({
                 if(!res.ok) throw new Error("Can not log in");
                 return res.json();
             })
-            .then((user) => {
-                this.CurrUser = user;
+            .then((data) => {
+                this.CurrUser = data;
             })
             .catch((error) => {
                 console.log(error);
