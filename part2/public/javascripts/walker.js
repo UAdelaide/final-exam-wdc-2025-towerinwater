@@ -25,6 +25,7 @@ createApp({
                     }
                     /* Got the current user id */
                     cuid.value = info.info;
+                    /* Log message make sure everything is working */
                     alert(info.message);
                 });
             });
