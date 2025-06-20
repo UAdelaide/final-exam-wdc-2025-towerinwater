@@ -44,6 +44,7 @@ createApp({
                     this.CurrUser.email = info.user.email;
 
                     const role = this.CurrUser.role;
+                    console.log(role);
                     if(role === 'owner') window.location.href = '/owner-dashboard.html';
                     else if(role === 'walker') window.location.href = '/walker-dashboard.html';
 
