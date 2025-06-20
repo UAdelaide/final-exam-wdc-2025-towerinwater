@@ -1,2 +1,2 @@
 SELECT
-    
+    w_ra.
