@@ -18,4 +18,4 @@ function requireRole(role){
     };
 }
 
-module.exports = requireLogin;
+module.exports = { requireLogin, requireRole };
