@@ -5,7 +5,7 @@ createApp({
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
-        const cuid = null;
+        const cuid = ref(null);
 
         async function getCurrentUser() {
             await fetch('users/me', {
@@ -22,7 +22,7 @@ createApp({
                         throw new Error(info.error);
                     }
 
-                    cuid = info.info;
+                    cuid.value = info.info;
                     alert(info.message);
                 });
             });
