@@ -31,10 +31,11 @@ createApp({
                     throw new Error(info.error);
                 }
                 this.dogs = info.info;
+
                 /*Putting the image for each of the dog*/
                 for(const dog of this.dogs){
                     try{
-                        await fetch('https://dog.ceo/api/breeds/image/random')
+                        fetch('https://dog.ceo/api/breeds/image/random')
                         .then((res) => {
                             res.json().then((info) => {
                                 if(!res.ok){
