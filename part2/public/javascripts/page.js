@@ -33,9 +33,7 @@ createApp({
                 this.dogs = info.info;
 
                 /*Putting the image for each of the dog*/
-                this.dogs.forEach(element => {
-
-                });
+                this.dogs.forEach(async (dog) => {
                     try{
                         await fetch('https://dog.ceo/api/breeds/image/random')
                         .then((res) => {
@@ -54,6 +52,7 @@ createApp({
                     catch{
                         dog.imgURL = img_placeholder;
                     }
+                });
                 /* Log message make sure everything is working */
                 alert(info.message);
             });
