@@ -23,7 +23,7 @@ createApp({
     },
 
     mounted(){
-        
+        fetch('')
     },
 
     setup() {
