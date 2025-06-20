@@ -12,7 +12,7 @@ app.use(session({
     name: 'user.id',
     secret: 'TriHai',
     saveUninitialized: false,
-    
+    cookie: 
 }));
 
 // Routes
