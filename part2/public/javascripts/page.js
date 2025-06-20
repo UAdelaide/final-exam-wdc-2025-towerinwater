@@ -33,7 +33,9 @@ createApp({
                 this.dogs = info.info;
 
                 /*Putting the image for each of the dog*/
-                for(const dog of this.dogs){
+                this.dogs.forEach(element => {
+
+                });
                     try{
                         await fetch('https://dog.ceo/api/breeds/image/random')
                         .then((res) => {
