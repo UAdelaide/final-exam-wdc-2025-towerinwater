@@ -12,7 +12,7 @@ createApp({
     methods: {
         async login(){
             try{
-                const 
+                const res = await fetch('users/login', {})
             }
         }
     }
