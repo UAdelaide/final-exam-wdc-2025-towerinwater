@@ -34,10 +34,10 @@ createApp({
                 /* Log message make sure everything is working */
                 alert(info.message);
             });
+            console.log(this.dogs);
         });
 
         for(const dog of this.dogs){
-            console.log(dog);
             try{
                 await fetch('https://dog.ceo/api/breeds/image/random')
                 .then((res) => {
