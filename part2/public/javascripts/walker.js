@@ -5,7 +5,7 @@ createApp({
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
-        const user = 17;
+        const cuid = null;
 
         async function getCurrentUser() {
 
