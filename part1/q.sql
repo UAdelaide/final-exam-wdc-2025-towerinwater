@@ -12,6 +12,6 @@ INSERT INTO Dogs (name, size, owner_id) VALUES
     ('Wi', 'large', (SELECT user_id FROM Users WHERE username = 'hai')),
     ('Bo', 'medium', (SELECT user_id FROM Users WHERE username = 'phuong'));
 
-
+INSERT INTO WalkRequests (dog_id, requested_time, duration_minutes, location, status)
 
 SELECT * FROM Users;
