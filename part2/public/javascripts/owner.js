@@ -31,9 +31,13 @@ createApp({
             res.json().then((info) => {
                 if(res.status === 400){
                     alert(info.error);
-                    throw new Error(info.error)
+                    throw new Error(info.error);
                 }
-                else if(!res.ok)
+                else if(!res.ok){
+                    alert(info.error);
+                    throw new Error(info.error);
+                }
+                
             });
         });
     },
