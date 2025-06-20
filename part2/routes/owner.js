@@ -15,8 +15,6 @@ router.post('/show_dogs', (req, res, next) => {
             `SELECT name FROM Dogs WHERE owner_id = ?`,
             [uid]
         );
-
-        const info = row
     }
     catch(error){
 
