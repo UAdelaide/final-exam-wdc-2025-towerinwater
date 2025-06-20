@@ -21,7 +21,7 @@ app.use(session({
     }
 }));
 app.get('/index.html', login, (req, res) => {
-    res.sendFile(path.join())
+    res.sendFile(path.join(__dirname, 'public', ''))
 });
 
 // Routes
