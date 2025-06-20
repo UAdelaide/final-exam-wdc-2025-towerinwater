@@ -7,7 +7,9 @@ createApp({
                 credentials: 'include'
             })
             .then((res) => {
-                if(res.)
+                if(res.status === 200){
+
+                }
             })
         }
     },
