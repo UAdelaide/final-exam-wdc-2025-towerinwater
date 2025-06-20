@@ -40,7 +40,7 @@ createApp({
 
         async function applyToWalk(requestId) {
             try {
-                if (!.value) {
+                if (!cuid.value) {
                     throw new Error('Not logged in');
                 }
                 const res = await fetch(`/walker/${requestId}/apply`, {
