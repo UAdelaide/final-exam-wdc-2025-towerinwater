@@ -11,10 +11,9 @@ createApp({
                 name: '',
                 role: '',
                 email: '',
-                
             }
         };
-    }
+    },
     methods: {
         async login(){
             try{
@@ -28,7 +27,7 @@ createApp({
                     return res.json();
                 })
                 .then((user) =>{
-
+                    this.
                 })
             }
         }
