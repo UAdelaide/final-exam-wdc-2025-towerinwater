@@ -7,7 +7,7 @@ router.post('/show_dogs', (req, res, next) => {
         const uid = req.session.user.user_id;
     }
     else{
-        return res.status(404).
+        return res.status(400).json({message: ''})
     }
 
     try{
