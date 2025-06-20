@@ -4,5 +4,7 @@ const pool = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: ,
+    database: 'dogwalks.sql'
 });
+
+export 
