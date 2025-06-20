@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(session({
     name: 'user.sid',
     secret: 'TriHai',
+    resave: false,
     saveUninitialized: false,
     cookie: {
         maxAge: 1000 * 6000,
