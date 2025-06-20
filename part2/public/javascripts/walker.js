@@ -23,6 +23,9 @@ createApp({
                     }
 
                     cuid.value = info.info;
+
+                    console.log(cuid.value);
+
                     alert(info.message);
                 });
             });
