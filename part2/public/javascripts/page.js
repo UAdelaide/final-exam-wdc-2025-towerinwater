@@ -40,13 +40,13 @@ createApp({
         .then((res) => {
             res.json().then((info) => {
                 if(!res.ok){
-                alert(res.status);
-                throw new Error('Can not fetch image');
-            }
-            this.img = res.message;
-            /* Log message make sure everything is working */
-            alert(info.message);
-            }
+                    alert(info.status);
+                    throw new Error('Can not fetch image');
+                }
+                this.img = res.message;
+                /* Log message make sure everything is working */
+                alert(info.message);
+            });
         });
     },
 
