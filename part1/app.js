@@ -89,7 +89,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
                 wr.request_id,
                 d.name AS dog_name,
                 wr.requested_time,
-                wr.duration_time,
+                wr.duration_minutes,
                 wr.location,
                 u.username AS name
             FROM WalkRequests AS wr
