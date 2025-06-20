@@ -97,6 +97,8 @@ app.get('/api/walkrequests/open', async (req, res) => {
             INNER JOIN Dogs AS d ON wr.dog_id = d.dog_id
             INNER JOIN Users AS u ON wr.user_id = u.user_id
 
+            WHERE wr.status = 'open'
+
         `);
         res.json(rows);
     }
