@@ -8,6 +8,7 @@ createApp({
         const cuid = ref(null);
 
         async function getCurrentUser() {
+            /*
             await fetch('users/me', {
                 credentials: 'include'
             })
