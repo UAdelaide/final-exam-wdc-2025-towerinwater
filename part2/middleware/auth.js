@@ -13,7 +13,7 @@ function requireRole(role){
             return next();
         }
         else{
-            return res.
+            return res.status(404).send('No Access');
         }
     };
 }
