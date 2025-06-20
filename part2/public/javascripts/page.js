@@ -39,8 +39,8 @@ createApp({
         await fetch('https://dog.ceo/api/breeds/image/random')
         .then((res) => {
             if(!res.ok){
-                alert(info.error);
-                throw new Error(info.error);
+                alert(res.status);
+                throw new Error();
             }
             console.log(info.info);
             this.dogs = info.info;
