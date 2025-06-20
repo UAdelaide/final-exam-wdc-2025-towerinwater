@@ -35,7 +35,7 @@ createApp({
             });
         });
 
-        await fetch('')
+        await fetch('https://dog.ceo/api/breeds/image/random')
     },
 
     methods: {
