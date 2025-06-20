@@ -8,6 +8,7 @@ createApp({
                 username: '',
                 password: ''
             },
+            /*Store the data of the current user*/
             CurrUser: {
                 uid: null,
                 name: '',
