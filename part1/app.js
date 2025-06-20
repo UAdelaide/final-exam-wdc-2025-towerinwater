@@ -70,10 +70,10 @@ app.get('/api/dogs', async (req, res) => {
                 d.name AS dog_name,
                 d.size AS dog_size,
                 u.username AS name
-                FROM Dogs AS d
+            FROM Dogs AS d
 
-                INNER JOIN Users AS u ON
-                    d.owner_id = u.user_id
+            INNER JOIN Users AS u ON
+                d.owner_id = u.user_id
         `);
         res.json(rows);
     }
@@ -89,6 +89,8 @@ app.get('/api/walkrequests/open', async (req, res) => {
                 wr.request_id,
                 d.name AS dog_name,
                 wr.request_time,
+                wr.duration_time,
+                
 
         `);
         res.json(rows);
