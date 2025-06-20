@@ -8,7 +8,8 @@ createApp({
                 password: ''
             },
             CurrUser: {
-                username: '',
+                name: '',
+                role: '',
                 
             }
         };
