@@ -115,7 +115,9 @@ app.get('/api/walkers/summary', async (req, res) => {
             FROM Users u
                 INNER JOIN WalkApplications wa
                     ON u.user_id = wa.walker_id AND wa.status = 'accepted'
-                INNER JOIN WalkR
+                INNER JOIN WalkRatings r
+                    ON u.user_id = r.walker_id
+                
         `);
         res.json(rows);
     }
