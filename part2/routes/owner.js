@@ -18,9 +18,9 @@ router.post('/show_dogs', (req, res, next) => {
             [uid]
         );
 
-        res.status(200).json({ message: 'Successfully Loaded', info: rows });
+        res.status(200).json({ message: 'Successfully Loaded Info', info: rows });
     }
     catch(error){
-
+        res.
     }
 });
