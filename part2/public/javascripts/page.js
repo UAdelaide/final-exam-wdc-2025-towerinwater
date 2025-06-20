@@ -245,6 +245,7 @@ function downvote(index) {
 }
 
 
+/**/
 /*function login(){
 
     let user = {
