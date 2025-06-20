@@ -17,7 +17,9 @@ createApp({
                     headers: { 'Content-Type': 'application/json'},
                     body: JSON.stringify({user})
                 })
-                .then(res => )
+                .then((res) => {
+                    if(!res.ok) throw new Error()
+                })
             }
         }
     }
