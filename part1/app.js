@@ -103,7 +103,28 @@ app.get('/api/walkrequests/open', async (req, res) => {
     }
 });
 
-app.get('api/walker/summary')
+app.get('/api/walkers/summary', async (req, res) => {
+    try{
+        const [rows] = db.query(`
+            SELECT
+                wr.request_id,
+                d.name AS dog_name,
+                wr.requested_time,
+                wr.duration_minutes,
+                wr.location,
+                u.username AS owner_username
+            FROM WalkRequests AS wr
+                INNER JOIN Dogs AS d ON wr.dog_id = d.dog_id
+                INNER JOIN Users AS u ON d.owner_id = u.user_id
+            WHERE wr.status = 'open'
+        `);
+        res.json(rows);
+    }
+    catch(err){
+        console.log(err);
+    }
+});
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 
