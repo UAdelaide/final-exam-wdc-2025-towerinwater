@@ -30,7 +30,8 @@ createApp({
         .then((res) => {
             res.json().then((info) => {
                 if(res.status === 400){
-                    alert()
+                    alert(info.message);
+                    throw new Error()
                 }
             });
         });
