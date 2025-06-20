@@ -66,7 +66,7 @@ let db;
 // Route to return books as JSON
 app.get('/api/dogs', async (req, res) => {
     try{
-        const [rows] = 
+        const [rows] = db.
     }
     catch(err){
         console.log(err);
