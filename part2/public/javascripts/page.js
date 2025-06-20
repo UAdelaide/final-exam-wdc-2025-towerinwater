@@ -37,6 +37,7 @@ createApp({
         });
 
         this.dogs.forEach(async (dog) => {
+        for(const dog of this.dogs)
             try{
                 await fetch('https://dog.ceo/api/breeds/image/random')
                 .then((res) => {
