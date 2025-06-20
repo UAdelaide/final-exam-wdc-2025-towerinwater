@@ -21,7 +21,7 @@ createApp({
                         alert(response.message);
                     }
                     else{
-                        alert(res.json().error);
+                        alert(response.error);
                     }
                 });
             });
