@@ -8,7 +8,10 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
-app.use()
+app.use(session({
+    name: 'user.id',
+
+}));
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
