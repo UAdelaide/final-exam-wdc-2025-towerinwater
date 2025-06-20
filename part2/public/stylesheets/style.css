@@ -156,5 +156,7 @@ section {
 }
 
 .logout-space{
-    
+    display: flex;
+    justify-content: center;
+    fel
 }
