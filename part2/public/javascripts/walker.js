@@ -23,7 +23,7 @@ createApp({
                         alert(info.error);
                         throw new Error(info.error);
                     }
-                    /*  */
+                    /* Got the current user id */
                     cuid.value = info.info;
                     alert(info.message);
                 });
