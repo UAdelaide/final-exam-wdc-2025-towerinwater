@@ -42,7 +42,7 @@ createApp({
             })
             .then((data) => {
                 alert(data.message);
-                this.CurrUser = data;
+                this.CurrUser = data.user;
             })
             .catch((error) => {
                 console.log(error);
