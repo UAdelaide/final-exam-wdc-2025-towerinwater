@@ -1,4 +1,5 @@
-//Taken from the starthere code
+//Taken from the starthere app.js code
+
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -32,7 +33,7 @@ let db;
       host: 'localhost',
       user: 'root',
       password: '',
-      database: 'testdb'
+      database: ''
     });
 
     // Create a table if it doesn't exist
