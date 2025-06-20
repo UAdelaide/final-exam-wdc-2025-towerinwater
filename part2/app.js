@@ -9,7 +9,6 @@ const requireLogin = require('./middleware/auth');
 
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '/public')));
 app.use(session({
     name: 'user.sid',
     secret: 'TriHai',
@@ -23,6 +22,7 @@ app.use(session({
 app.get('/index.html', requireLogin, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+app.use(express.static(path.join(__dirname, '/public')));
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
