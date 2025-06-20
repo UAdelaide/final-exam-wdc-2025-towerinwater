@@ -46,6 +46,7 @@ createApp({
                             throw new Error('Can not fetch image');
                         }
                         dog.imgURL = info.message;
+                        console.log()
                         /* Log message make sure everything is working */
                         alert(info.status);
                     });
@@ -54,7 +55,6 @@ createApp({
             catch{
                 dog.imgURL = img_placeholder;
             }
-
         });
     },
 
