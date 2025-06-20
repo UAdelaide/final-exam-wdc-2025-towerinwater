@@ -28,13 +28,7 @@ createApp({
                 body: JSON.stringify(user)
             })
             .then((res) => {
-                if(res === 401){
-                    return res.json().then((err) => {
-                        alert(err.error);
-                    })
-                }
-                if(!res.ok) throw new Error("Can not log in");
-                return res.json();
+                
             })
             .then((data) => {
                 this.CurrUser = data;
