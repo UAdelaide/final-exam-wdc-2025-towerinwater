@@ -1,5 +1,11 @@
-const { createApp, ref } = Vue
-
+const { createApp } = Vue;
+createApp({
+    data() {
+        return {
+            message: 'Welcome to the Dog Walking Service!'
+        };
+    }
+}).mount('#app');
 
 
 
