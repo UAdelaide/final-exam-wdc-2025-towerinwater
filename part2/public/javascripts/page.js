@@ -46,7 +46,6 @@ createApp({
             })
             .catch((error) => {
                 console.log(error);
-                alert('Can not log in');
             });
         }
     }
