@@ -7,6 +7,10 @@ function requireLogin(req, res, next){
     }
 }
 
-function requireRole(role)
+function requireRole(role){
+    return (req, res, next) => {
+        
+    };
+}
 
 module.exports = requireLogin;
