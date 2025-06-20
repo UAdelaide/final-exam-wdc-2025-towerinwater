@@ -17,7 +17,7 @@ createApp({
             },
             dogs: [],
             img: '',
-            img_placeholder: '../'
+            img_placeholder: ''
         };
     },
 
