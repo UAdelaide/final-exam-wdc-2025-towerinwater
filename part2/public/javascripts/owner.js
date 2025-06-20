@@ -28,19 +28,19 @@ createApp({
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(form.value)
                 });
-            const result = await res.json();
+                const result = await res.json();
 
-            if (!res.ok) throw new Error(result.error || 'Error submitting walk request');
+                if (!res.ok) throw new Error(result.error || 'Error submitting walk request');
 
-            message.value = result.message;
-            error.value = '';
-            form.value = {
-                dog_id: '',
-                requested_time: '',
-                duration_minutes: '',
-                location: ''
-            };
-            loadWalks();
+                message.value = result.message;
+                error.value = '';
+                form.value = {
+                    dog_id: '',
+                    requested_time: '',
+                    duration_minutes: '',
+                    location: ''
+                };
+                loadWalks();
             } catch (err) {
                 error.value = err.message;
                 message.value = '';
