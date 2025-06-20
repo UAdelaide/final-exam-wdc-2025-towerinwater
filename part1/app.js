@@ -118,7 +118,7 @@ app.get('/api/walkers/summary', async (req, res) => {
                 INNER JOIN WalkRatings r
                     ON u.user_id = r.walker_id
             WHERE u.role = 'walker'
-            GROUP BY 
+            GROUP BY u.user_id, u.username
         `);
         res.json(rows);
     }
