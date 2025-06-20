@@ -43,9 +43,9 @@ createApp({
                     alert(info.status);
                     throw new Error('Can not fetch image');
                 }
-                this.img = res.message;
+                this.img = info.message;
                 /* Log message make sure everything is working */
-                alert(info.message);
+                alert(info.status);
             });
         });
     },
