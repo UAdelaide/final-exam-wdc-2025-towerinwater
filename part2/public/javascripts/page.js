@@ -52,8 +52,6 @@ createApp({
                 console.log(error);
             });
         }
-
-        
     }
 }).mount('#app');
 
