@@ -17,7 +17,7 @@ createApp({
                     headers: { 'Content-Type': 'application/json'},
                     body: JSON.stringify({user})
                 })
-                .then()
+                .then(res => )
             }
         }
     }
