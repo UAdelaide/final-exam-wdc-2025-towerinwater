@@ -5,6 +5,7 @@ createApp({
             message: 'Welcome to the Dog Walking Service!'
         };
     }
+    method
 }).mount('#app');
 
 
