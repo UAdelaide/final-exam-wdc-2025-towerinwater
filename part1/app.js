@@ -80,9 +80,7 @@ app.get('/api/dogs', async (req, res) => {
 app.get('/api/walkrequests/open', async (req, res) => {
     try{
         const [rows] = db.query(`
-            SELECT d.name AS dog_name, d.size AS dog_size, u.username AS name FROM Dogs AS d
-                INNER JOIN Users AS u ON
-                    d.owner_id = u.user_id
+            SELECT * FROM 
         `);
         res.json(rows);
     }
