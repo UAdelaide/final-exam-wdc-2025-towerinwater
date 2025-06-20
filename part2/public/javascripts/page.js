@@ -3,7 +3,7 @@ createApp({
     data() {
         return {
             message: 'Welcome to the Dog Walking Service!',
-            user: {
+            UserLogin: {
                 username: '',
                 password: ''
             }
@@ -22,7 +22,7 @@ createApp({
                     return res.json();
                 })
                 .then((user) =>{
-                    
+
                 })
             }
         }
