@@ -22,7 +22,7 @@ createApp({
                         throw new Error(info.error);
                     }
 
-                    this.cuid = info.info;
+                    cuid = info.info;
                     alert(info.message);
                 });
             });
