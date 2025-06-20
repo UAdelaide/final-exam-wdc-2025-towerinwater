@@ -40,6 +40,7 @@ createApp({
                     alert(info.message);
                     return info;
                 });
+                return res;
             })
             .then((data) => {
                 this.CurrUser.uid = data.user.user_id;
