@@ -24,12 +24,11 @@ createApp({
         .then((res) => {
             /* Successfully got the result and parse the json for result or log message */
             res.json().then((info) => {
-                else if(!res.ok){
+                if(!res.ok){
                     alert(info.error);
                     throw new Error(info.error);
                 }
-                /* Got the current user id */
-                cuid.value = info.info;
+                this.dogs = 
                 /* Log message make sure everything is working */
                 alert(info.message);
             });
