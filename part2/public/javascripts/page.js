@@ -42,10 +42,10 @@ createApp({
                 });
             })
             .then((data) => {
-                this.CurrUser = data.user.user_id;
-                this.CurrUser = data.user.username;
-                this.CurrUser = data.user.role;
-                this.CurrUser = data.user.email;
+                this.CurrUser.uid = data.user.user_id;
+                this.CurrUser.name = data.user.username;
+                this.CurrUser.role = data.user.role;
+                this.CurrUser.email = data.user.email;
                 console.log(this.CurrUser);
             })
             .catch((error) => {
