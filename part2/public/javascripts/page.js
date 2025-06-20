@@ -10,7 +10,7 @@ createApp({
             CurrUser: {
                 name: '',
                 role: '',
-                email: '',
+                email: ''
             }
         };
     },
