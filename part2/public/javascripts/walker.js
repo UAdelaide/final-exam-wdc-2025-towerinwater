@@ -12,7 +12,7 @@ createApp({
                 credentials: 'include'
             })
             .then((res) => {
-                res.json((info) => {
+                res.json().then((info) => {
 
                 });
             });
