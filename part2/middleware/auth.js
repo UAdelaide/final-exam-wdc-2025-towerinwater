@@ -7,4 +7,6 @@ function requireLogin(req, res, next){
     }
 }
 
+function requireRole(role)
+
 module.exports = requireLogin;
