@@ -15,6 +15,8 @@ function requireRole(role){
         else{
             if(req.session.user.role === 'walker'){
                 res.setInterval(() => {
+                   
+                }, interval);
 
                 res.redirect('/walker-dashboard.html');
             }
