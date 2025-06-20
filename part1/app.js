@@ -1,5 +1,4 @@
 //Taken from the starthere app.js code
-
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -66,7 +65,7 @@ let db;
 
 // Route to return books as JSON
 app.get('/', async (req, res) => {
-    
+
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
