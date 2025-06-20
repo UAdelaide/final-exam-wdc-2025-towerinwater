@@ -12,7 +12,11 @@ app.use(session({
     name: 'user.id',
     secret: 'TriHai',
     saveUninitialized: false,
-    cookie: 
+    cookie: {
+        maxAge: 1000 * 6000,
+        httpOnly: true,
+        rolling 
+    }
 }));
 
 // Routes
