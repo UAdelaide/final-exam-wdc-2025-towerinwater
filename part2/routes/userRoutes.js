@@ -41,7 +41,7 @@ router.post('/login', async (req, res) => {
 
 	try {
 		const [rows] = await db.query(`
-			SELECT username, role, email FROM Users
+			SELECT user_id, username, role, email FROM Users
 			WHERE username = ? AND password_hash = ?
 		`, [username, password]);
 
@@ -50,6 +50,7 @@ router.post('/login', async (req, res) => {
 		}
 
 		req.session.user = {username: rows.username, user_id, }
+
 		res.json({ message: 'Login successful', user: rows[0] });
 	} catch (error) {
 		res.status(500).json({ error: 'Login failed' });
