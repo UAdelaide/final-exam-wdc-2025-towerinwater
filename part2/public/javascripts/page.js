@@ -38,11 +38,11 @@ createApp({
                         throw new Error(info.error);
                     }
                     alert(info.message);
-                    return res.json;
+                    return info.user;
                 });
             })
             .then((data) => {
-                this.CurrUser = data.user;
+                this.CurrUser = data;
                 console.log(this.CurrUser);
             })
             .catch((error) => {
