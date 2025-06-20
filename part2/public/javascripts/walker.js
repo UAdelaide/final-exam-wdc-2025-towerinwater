@@ -9,9 +9,9 @@ createApp({
 
         async function getCurrentUser() {
             await fetch('users/me', {
-                
+                credentials: 'include'
             })
-            .then();
+            .then((res));
         }
 
         async function loadWalkRequests() {
