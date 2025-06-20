@@ -37,7 +37,10 @@ createApp({
                     alert(info.error);
                     throw new Error(info.error);
                 }
-                
+
+                info.forEach(name => {
+                    
+                });
             });
         });
     },
