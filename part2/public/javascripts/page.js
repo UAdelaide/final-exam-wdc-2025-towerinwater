@@ -17,7 +17,7 @@ createApp({
             },
             dogs: [],
             img: '',
-            img_placeholder: ''
+            img_placeholder: 'images/logo.png'
         };
     },
 
@@ -51,6 +51,9 @@ createApp({
                         alert(info.status);
                     });
                 });
+            }
+            catch{
+                dog.
             }
         });
     },
