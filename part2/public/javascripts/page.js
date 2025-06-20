@@ -54,7 +54,7 @@ createApp({
             catch{
                 dog.imgURL = img_placeholder;
             }
-                    dog.imageUrl = info.message;
+
         });
     },
 
