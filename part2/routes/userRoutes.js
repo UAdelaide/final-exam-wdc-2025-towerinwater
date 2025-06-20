@@ -65,7 +65,7 @@ router.post('/logout', (req, res) => {
 		if(err){
 			return res.status(500);
 		}
-		//Clear the cookies when everything is 
+		//Clear the cookies when no errors occur.
 		res.clearCookie('user.sid');
 		return res.status(200);
 	});
