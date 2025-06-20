@@ -24,7 +24,7 @@ createApp({
 
     mounted(){
         
-    }
+    },
 
     setup() {
         const form = ref({
