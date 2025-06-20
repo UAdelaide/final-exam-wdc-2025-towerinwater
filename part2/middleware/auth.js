@@ -1,3 +1,5 @@
 (req, res, next) => {
-    if(req.session, )
+    if(req.session && req.session.user){
+        
+    }
 }
