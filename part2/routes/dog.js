@@ -5,13 +5,7 @@ const db = require('../models/db');
 router.get('/show', async (req, res) => {
     try{
         const [rows] = await db.query(`
-            SELECT
-                d.name AS dog_name,
-                d.size AS size,
-                u.username AS owner_username
-            FROM Dogs AS d
-            INNER JOIN Users AS u ON
-                d.owner_id = u.user_id
+            SELECT 
         `);
         res.status(200).json({ message: 'Successfully Loaded Info.', info: rows });
     }
