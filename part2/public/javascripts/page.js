@@ -40,10 +40,9 @@ createApp({
         .then((res) => {
             if(!res.ok){
                 alert(res.status);
-                throw new Error('');
+                throw new Error('Can not fetch image');
             }
-            console.log(info.info);
-            this.dogs = info.info;
+            this.img = ;
             /* Log message make sure everything is working */
             alert(info.message);
         });
