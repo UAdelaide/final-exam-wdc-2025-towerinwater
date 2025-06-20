@@ -20,8 +20,8 @@ app.use(session({
     }
 }));
 
-app.get('/index.html', requireLogin, (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+app.get('/owner-dashboard.html', requireLogin, (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'owner-dashboard.html'));
 });
 
 app.use(express.static(path.join(__dirname, '/public')));
