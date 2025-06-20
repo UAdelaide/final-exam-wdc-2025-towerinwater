@@ -23,6 +23,9 @@ app.use(session({
 app.get('/owner-dashboard.html', requireLogin, (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'owner-dashboard.html'));
 });
+app.get('/owner-dashboard.html', requireLogin, (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'owner-dashboard.html'));
+});
 
 app.use(express.static(path.join(__dirname, '/public')));
 
