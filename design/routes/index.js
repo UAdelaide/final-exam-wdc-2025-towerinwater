@@ -10,7 +10,6 @@ const db = mysql.createPool({
   queueLimit: 0
 });
 
-module.exports = pool;
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
