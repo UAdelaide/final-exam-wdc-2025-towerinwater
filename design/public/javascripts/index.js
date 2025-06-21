@@ -36,6 +36,7 @@ createApp({
                     throw new Error(info.error);
                 }
                 this.dogs = info.info;
+                console.log(dogs);
 
                 /*Putting the image for each of the dog*/
                 this.dogs.forEach(async (dog) => {
