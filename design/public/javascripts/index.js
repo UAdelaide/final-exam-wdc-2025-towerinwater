@@ -47,52 +47,6 @@ createApp({
         refresh(){
             window.location.reload();
         },
-        //login function which will be prompted by the 'button' from the html when submit, using the Vue framework.
-        async login(){
-            //initialise the data which will be sent.
-            const user = {
-                username: this.UserLogin.username,
-                password: this.UserLogin.password
-            };
-
-            await fetch('users/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json'},
-                body: JSON.stringify(user)
-            })
-            .then((res) => {    //Having got the response
-                res.json().then((info) => {
-                    //Check if the credential is aligned.
-                    if(res.status === 401){
-                        alert(info.error);
-                        throw new Error(info.error);
-                    }
-                    //other errors which are not related to the credential but mostly server side.
-                    else if(!res.ok){
-                        alert(info.error)
-                        throw new Error(info.error);
-                    }
-
-                    /*Whenever there is error, throw new Error(...) will break out of the chain.*/
-                    /*At the end, the data has been retrieved correctly and assigned to the current user.*/
-                    /*Then take them to the corresponding page of their roles.*/
-                    this.CurrUser.uid = info.user.user_id;
-                    this.CurrUser.name = info.user.username;
-                    this.CurrUser.role = info.user.role;
-                    this.CurrUser.email = info.user.email;
-
-                    /*Taking them to their page*/
-                    const role = this.CurrUser.role;
-                    if(role === 'owner') window.location.href = '/owner-dashboard.html';
-                    else if(role === 'walker') window.location.href = '/walker-dashboard.html';
-
-                    alert(info.message);
-                });
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-        }
     }
 }).mount('#app');
 
