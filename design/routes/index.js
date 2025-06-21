@@ -23,6 +23,7 @@ router.get('/show', async (req, res) => {
 		const [rows] = await db.query(`
             SELECT * FROM Dogs
         `);
+		if[rows.length === 0]
 		res.status(200).json({ message: 'Successfully Loaded Info.', info: rows });
 	}
 	catch (err) {
