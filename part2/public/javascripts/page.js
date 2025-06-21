@@ -17,7 +17,7 @@ createApp({
             },
             /* Store all the data of the dog */
             dogs: [],
-            img: '',
+            /* Default image when the dog  */
             img_placeholder: 'images/logo.png'
         };
     },
