@@ -119,7 +119,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
                 INNER JOIN Users AS u ON d.owner_id = u.user_id
             WHERE wr.status = 'open'
         `);
-        res.json(rows);
+        res.status(200).json(rows);
     }
     catch(err){
         console.log(err);
@@ -143,7 +143,7 @@ app.get('/api/walkers/summary', async (req, res) => {
             WHERE u.role = 'walker'
             GROUP BY u.user_id, u.username
         `);
-        res.json(rows);
+        res.status(200).json(rows);
     }
     catch(err){
         console.log(err);
