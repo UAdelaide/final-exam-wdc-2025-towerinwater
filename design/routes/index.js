@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
-/* Taken from the models of part 2 */
-
+const db = require('')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
