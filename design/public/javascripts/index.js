@@ -2,7 +2,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: 'Welcome to the Dog Walking Service!',
+            message: 'Welcome to the Dog Of The Day Dashboard',
             /*Storing the login info of the user*/
             UserLogin: {
                 username: '',
