@@ -27,8 +27,9 @@ createApp({
         .then((res) => {
             /* Successfully got the result and parse the json for result or log message */
             res.json().then((info) => {
-
-                if(res.)
+                if(res.status === 404){
+                    alert(info.error);
+                }
                 else if(!res.ok){
                     alert(info.error);
                     throw new Error(info.error);
