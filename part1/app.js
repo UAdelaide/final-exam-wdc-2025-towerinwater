@@ -17,6 +17,8 @@ const usersRouter = require('./routes/users');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.use(express.static(path.join(__dirname, '/public')));
+
 let db;
 
 (async () => {
