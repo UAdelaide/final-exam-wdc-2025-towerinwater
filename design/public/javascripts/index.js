@@ -16,7 +16,7 @@ createApp({
                 email: ''
             },
             /* Store all the data of the dog */
-            dogs: [],
+            imgURL = '';
             /* Default image when the dogs' images are not found */
             img_placeholder: 'images/logo.png'
         };
