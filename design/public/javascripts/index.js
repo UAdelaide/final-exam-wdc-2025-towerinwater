@@ -23,30 +23,24 @@ createApp({
     },
 
     async mounted(){
-                    try{
-                        await fetch('https://dog.ceo/api/breeds/image/random')
-                        .then((res) => {
-                            res.json().then((info) => {
-                                if(!res.ok){
-                                    alert(info.status);
-                                    throw new Error('Can not fetch image');
-                                }
-                                dog.imgURL = info.message;
-                                console.log(dog);
-                                /* Log message make sure everything is working */
-                                // alert(info.status);
-                            });
-                        });
+        try{
+            await fetch('https://dog.ceo/api/breeds/image/random')
+            .then((res) => {
+                res.json().then((info) => {
+                    if(!res.ok){
+                        alert(info.status);
+                        throw new Error('Can not fetch image');
                     }
-                    catch{
-                        dog.imgURL = img_placeholder;
-                    }
+                    dog.imgURL = info.message;
+                    console.log(dog);
+                    /* Log message make sure everything is working */
+                    // alert(info.status);
                 });
-                /* Log message make sure everything is working */
-                alert(info.message);
             });
-        });
-
+        }
+        catch{
+            dog.imgURL = img_placeholder;
+        }
     },
 
     methods: {
