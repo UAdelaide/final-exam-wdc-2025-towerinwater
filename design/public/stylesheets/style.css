@@ -11,7 +11,7 @@ a {
   background-color: aqua;
 }
 
-/**/
+/* The css code is reference from GeekforGeeks*/
 @keyframes blink {
 	0% {
 		opacity: 1;
