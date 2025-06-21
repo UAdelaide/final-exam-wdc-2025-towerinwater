@@ -27,6 +27,6 @@ a {
 }
 .blinking-text {
 	text-align: center;
-	animation: blink 1s infinite;
+	animation: blink 0.5s infinite;
 }
 
