@@ -23,7 +23,7 @@ createApp({
     },
 
     async mounted(){
-        await fetch('/dog/show')
+        await fetch('/show')
         .then((res) => {
             /* Successfully got the result and parse the json for result or log message */
             res.json().then((info) => {
