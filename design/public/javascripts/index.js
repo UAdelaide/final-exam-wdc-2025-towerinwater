@@ -28,7 +28,8 @@ createApp({
             /* Successfully got the result and parse the json for result or log message */
             res.json().then((info) => {
 
-                if(!res.ok){
+                if(res.)
+                else if(!res.ok){
                     alert(info.error);
                     throw new Error(info.error);
                 }
