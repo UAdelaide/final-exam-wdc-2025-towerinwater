@@ -150,7 +150,8 @@ app.get('/api/walkers/summary', async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch database.' });
     }
 });
-/* the api/* calls */
+/* End of those api/* calls */
+/* End of  the part 1 */
 
 
 // error handler
