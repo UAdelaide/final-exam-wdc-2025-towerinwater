@@ -23,22 +23,7 @@ createApp({
     },
 
     async mounted(){
-        await fetch('/show')
-        .then((res) => {
-            /* Successfully got the result and parse the json for result or log message */
-            res.json().then((info) => {
-                if(res.status === 401){
-                    alert(info.error);
-                    throw new Error(info.error);
-                }
-                else if(!res.ok){
-                    alert(info.error);
-                    throw new Error(info.error);
-                }
-                this.dogs = info.info;
-
-                /*Putting the image for each of the dog*/
-                this.dogs.forEach(async (dog) => {
+        dogs.forEach(async (dog) => {
                     try{
                         await fetch('https://dog.ceo/api/breeds/image/random')
                         .then((res) => {
