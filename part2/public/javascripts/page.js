@@ -15,6 +15,7 @@ createApp({
                 role: '',
                 email: ''
             },
+            
             dogs: [],
             img: '',
             img_placeholder: 'images/logo.png'
