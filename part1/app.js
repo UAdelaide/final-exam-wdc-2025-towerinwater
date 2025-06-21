@@ -12,7 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-const indexRouter = 
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
 
 let db;
 
