@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-/* Taken from the models of part 2 */
 
+/* Taken from the models of part 2 */
 const mysql = require('mysql2/promise');
 const db = mysql.createPool({
   host: 'localhost',
@@ -17,6 +17,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* From part 1 */
 router.get('/show', async (req, res) => {
     try{
         const [rows] = await db.query(`
