@@ -96,7 +96,7 @@ app.get('/api/dogs', async (req, res) => {
             INNER JOIN Users AS u ON
                 d.owner_id = u.user_id
         `);
-        res.json(rows);
+        res.status(200).json(rows);
     }
     catch(err){
         console.log(err);
