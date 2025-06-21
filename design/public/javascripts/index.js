@@ -29,6 +29,7 @@ createApp({
             res.json().then((info) => {
                 if(res.status === 404){
                     alert(info.error);
+                    throw new Error(info.error);
                 }
                 else if(!res.ok){
                     alert(info.error);
