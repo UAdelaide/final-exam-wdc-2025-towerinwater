@@ -2,15 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* Taken from the models of part 2 */
-const mysql = require('mysql2/promise');
-const db = mysql.createPool({
-	host: 'localhost',
-	user: 'root',
-	database: 'DogWalkService',
-	waitForConnections: true,
-	connectionLimit: 10,
-	queueLimit: 0
-});
+
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
