@@ -38,8 +38,8 @@ createApp({
                 });
             });
         }
-        catch{
-            dog.imgURL = img_placeholder;
+        catch(error){
+            this.imgURL = img_placeholder;
         }
     },
 
