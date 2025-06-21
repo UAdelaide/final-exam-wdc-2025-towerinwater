@@ -45,7 +45,7 @@ createApp({
 
     methods: {
         refresh(){
-            window.location.
+            window.location.reload();
         }
         //login function which will be prompted by the 'button' from the html when submit, using the Vue framework.
         async login(){
