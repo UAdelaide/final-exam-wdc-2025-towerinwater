@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* From part 1 */
+/* From part 2 dog router */
 router.get('/show', async (req, res) => {
     try{
         const [rows] = await db.query(`
