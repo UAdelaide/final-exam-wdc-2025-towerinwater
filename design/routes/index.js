@@ -1,6 +1,16 @@
 var express = require('express');
 var router = express.Router();
+const mysql = require('mysql2/promise');
+const pool = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  database: 'DogWalkService',
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
+});
 
+module.exports = pool;
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
