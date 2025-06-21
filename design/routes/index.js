@@ -24,7 +24,7 @@ router.get('/show', async (req, res) => {
             SELECT * FROM Dogs
         `);
 		if(rows.length === 0){
-			
+			res.status(404).json
 		}
 		res.status(200).json({ message: 'Successfully Loaded Info.', info: rows });
 	}
