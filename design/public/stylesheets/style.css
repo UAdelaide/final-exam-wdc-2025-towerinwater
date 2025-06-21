@@ -6,9 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
 .blind{
 	color: #00B7FF;
 }
+
 #body_background {
   background-color: aqua;
 }
