@@ -38,7 +38,7 @@ createApp({
                 });
             });
         }
-        catch(error){
+        catch{
             this.imgURL = img_placeholder;
         }
     },
