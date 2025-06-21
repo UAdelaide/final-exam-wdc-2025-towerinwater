@@ -27,7 +27,9 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-<!--
+/* Start of the part 1 section */
+/* Initialise the database */
+
 
 
 
