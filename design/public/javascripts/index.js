@@ -47,4 +47,4 @@ createApp({
             window.location.reload();
         },
     }
-}).mount('#app');
+}).mount('#body_back');
